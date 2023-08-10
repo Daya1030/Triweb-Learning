@@ -1,0 +1,12 @@
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: rgb(157, 13, 13);
+    text-align: center;
+  }
+  form {
+    color: rgb(8, 8, 8);
+    margin-left: 40%;
+  }
