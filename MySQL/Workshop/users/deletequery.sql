@@ -1,0 +1,1 @@
+delete FROM `users` WHERE email='dayaram10@outlook.com' 

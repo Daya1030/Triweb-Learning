@@ -1,0 +1,1 @@
+UPDATE `users` SET `Password`='1234567890' WHERE 'email'='dayaram10@outlook.com';
