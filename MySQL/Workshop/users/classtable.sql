@@ -1,5 +1,5 @@
 CREATE TABLE Classes(
-id int(11) AUTO_INCREMENT NOT NULL,
+id int AUTO_INCREMENT NOT NULL,
 class_name VARCHAR(50) NOT NULL,
 teacher_id int(11) NOT null,
 PRIMARY KEY (id),
