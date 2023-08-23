@@ -1,0 +1,1 @@
+UPDATE classes set class_name = 'class 5' WHERE id=1
