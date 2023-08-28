@@ -10,3 +10,13 @@ body {
     color: rgb(8, 8, 8);
     margin-left: 40%;
   }
+  .menu{
+    padding-top:50px;
+    font-size: 50px;
+    align-items: center;
+  } /*navigation bar*/
+  .li{
+    height: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
