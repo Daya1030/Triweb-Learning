@@ -1,0 +1,20 @@
+==>Insert
+db.test.insertOne({name: "daya", mobile:12444})
+
+db.test.insertMany([{name: "ram", mobile:12345}, {name: "daya", mobile:12444}, {name: "am", mobile:1235}, {name: "Radha", mobile:1265}])
+
+
+==>R
+db.test.find()
+
+db.test.find({name: "ram"})
+
+
+==>Update
+db.test.updateOne({name:"ram"}, {$set:{mobile:4444}})
+
+
+==>Delete
+db.test.deleteOne({name: "ram"})
+
+db.test.deleteMany()
