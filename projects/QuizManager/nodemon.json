@@ -1,0 +1,9 @@
+{
+  "env": {
+    "CONNECTION_STRING": "mongodb+srv://daya:1234567890@cluster0.zfa20tr.mongodb.net/?retryWrites=true&w=majority",
+    "PORT": 3000
+  },
+  "watch": ["src"],
+  "ext": "ts,json",
+  "exec": "ts-node ./src/app.ts"
+}

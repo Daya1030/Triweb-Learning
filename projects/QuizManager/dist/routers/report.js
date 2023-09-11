@@ -3,10 +3,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-//Redirect request to particular method on controller
 const express_1 = __importDefault(require("express"));
-const user_1 = require("../controllers/user");
+const report_1 = require("../controllers/report");
+const isAuth_1 = require("../middlewares/isAuth");
 const router = express_1.default.Router();
-//post /user/
-router.post('/', user_1.registerUser);
+router.get("/:reportId?", isAuth_1.isAuthenticated, report_1.getReport);
 exports.default = router;
