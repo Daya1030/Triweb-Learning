@@ -22,7 +22,7 @@ function Product() {
     
     if (isDataFetching) {
         return (
-            <div>Data is Loading.....</div>
+            <div>Data is Loading............</div>
         )
     }
     
