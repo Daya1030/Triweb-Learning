@@ -1,0 +1,6 @@
+{
+    "env":{
+        "connectionString":"mongodb+srv://daya:1234567890@cluster0.zfa20tr.mongodb.net/react?retryWrites=true&w=majority"
+    
+    }
+}
