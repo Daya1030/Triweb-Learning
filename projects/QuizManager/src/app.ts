@@ -18,7 +18,7 @@ interface ReturnResponse {
   data: {} | [];
 }
 
-const connectionString = process.env.connection_string || "";
+const connectionString = process.env.connection_string || "mongodb+srv://daya:1234567890@cluster0.zfa20tr.mongodb.net/Quiz?retryWrites=true&w=majority";
 
 app.use(express.json());
 
@@ -64,7 +64,7 @@ app.use((err: CustomError, req: Request, res: Response, next: NextFunction) => {
   res.status(statusCode).send(resp);
 });
 
-const connect = mongoose.connect(connectionString, {
+const connect = mongoose.connect(connectionString|| "mongodb+srv://daya:1234567890@cluster0.zfa20tr.mongodb.net/Quiz?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 } as mongoose.ConnectOptions);

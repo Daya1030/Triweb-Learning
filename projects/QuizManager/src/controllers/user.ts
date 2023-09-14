@@ -17,9 +17,9 @@ const getUser = async (req: Request, res: Response, next: NextFunction) => {
   let resp: ReturnResponse;
   try {
     const userId = req.params.userId;
-    if (req.userId != req.params.userId) {
+    if (req.params.userId != req.params.userId) {
       const err = new CustomError("You are not authorized");
-      err.statusCode = 401;
+      err.statusCode = 400;
       err.data = { hi: "It'sError " };
       throw err;
     }
@@ -41,7 +41,7 @@ const getUser = async (req: Request, res: Response, next: NextFunction) => {
 const updateUser = async (req: Request, res: Response, next: NextFunction) => {
   let resp: ReturnResponse;
   try {
-    if (req.userId != req.body._id) {
+    if (req.params.userId != req.body._id) {
       const err = new CustomError("You are not authorized");
       err.statusCode = 401;
       throw err;

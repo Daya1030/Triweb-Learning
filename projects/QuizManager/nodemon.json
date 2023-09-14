@@ -1,6 +1,6 @@
 {
   "env": {
-    "CONNECTION_STRING": "mongodb+srv://daya:1234567890@cluster0.zfa20tr.mongodb.net/?retryWrites=true&w=majority",
+    "CONNECTION_STRING": "mongodb+srv://daya:1234567890@cluster0.zfa20tr.mongodb.net/Quiz?retryWrites=true&w=majority",
     "PORT": 3000
   },
   "watch": ["src"],

@@ -11,7 +11,7 @@ const quiz_1 = __importDefault(require("./routers/quiz"));
 const exam_1 = __importDefault(require("./routers/exam"));
 const report_1 = __importDefault(require("./routers/report"));
 const app = (0, express_1.default)();
-const connectionString = process.env.CONNECTION_STRING || "";
+const connectionString = process.env.connection_string || "";
 app.use(express_1.default.json());
 app.get("/", (req, res) => {
     res.send("Working");
@@ -31,7 +31,7 @@ app.use((err, req, res, next) => {
     }
     else {
         message = "Something went wrong please try after sometime!";
-        statusCode = 500;
+        statusCode = 600;
     }
     let resp = { status: "error", message, data: {} };
     if (!!err.data) {
