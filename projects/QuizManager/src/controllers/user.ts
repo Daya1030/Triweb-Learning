@@ -2,12 +2,7 @@ import { Response, Request, NextFunction } from "express";
 
 import User from "../models/user";
 import CustomError from "../helper/error";
-
-interface ReturnResponse {
-  status: "error" | "success";
-  message: string;
-  data: {} | [];
-}
+import { ReturnResponse } from "../utils/interfaces";
 
 // get-->> get user data
 const getUser = async (req: Request, res: Response, next: NextFunction) => {
@@ -17,7 +12,7 @@ const getUser = async (req: Request, res: Response, next: NextFunction) => {
   let resp: ReturnResponse;
   try {
     const userId = req.params.userId;
-    if (req.params.userId != req.params.userId) {
+    if (req.userId != req.params.userId) {
       const err = new CustomError("You are not authorized");
       err.statusCode = 400;
       err.data = { hi: "It'sError " };
@@ -41,12 +36,12 @@ const getUser = async (req: Request, res: Response, next: NextFunction) => {
 const updateUser = async (req: Request, res: Response, next: NextFunction) => {
   let resp: ReturnResponse;
   try {
-    if (req.params.userId != req.body._id) {
+    if (req.userId != req.body.id) {
       const err = new CustomError("You are not authorized");
       err.statusCode = 401;
       throw err;
     }
-    const userId = req.body._id;
+    const userId = req.body.id;
     const user = await User.findById(userId);
     if (!user) {
       const err = new CustomError("No user exist");

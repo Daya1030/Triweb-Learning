@@ -1,4 +1,4 @@
-export default class CustomError extends Error {
+export default class projectError extends Error {
   private _status: number = 0;
   private _data: Object | [] = {};
 

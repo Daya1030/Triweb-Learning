@@ -4,7 +4,9 @@ import jwt from "jsonwebtoken";
 import CustomError from "../helper/error";
 
 const isAuthenticated = (req: Request, res: Response, next: NextFunction) => {
+  let isUserAuthenticated = false;
   try {
+    let isUserAuthenticated = false;
     //header -->> get token
     const authHeader = req.get("Authorization");
 
@@ -16,11 +18,11 @@ const isAuthenticated = (req: Request, res: Response, next: NextFunction) => {
 
     //get token
     const token = authHeader.split(" ")[1];
-
+    //console.log(token);
     ///jwt -->> decode token using sign
     let decodedToken: { userId: String; iat: Number; exp: Number };
     try {
-      decodedToken = <any>jwt.verify(token, "keepsecretmythissecretkey");
+      decodedToken = <any>jwt.verify(token, 'secretkey');
     } catch (error) {
       const err = new CustomError("Not authenticated");
       err.statusCode = 401;

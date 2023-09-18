@@ -1,5 +1,5 @@
-import express from "express";
 import { Response, Request, NextFunction } from "express";
+import express from "express";
 import mongoose from "mongoose";
 
 import userRouter from "./routers/user";
@@ -18,7 +18,7 @@ interface ReturnResponse {
   data: {} | [];
 }
 
-const connectionString = process.env.connection_string || "mongodb+srv://daya:1234567890@cluster0.zfa20tr.mongodb.net/Quiz?retryWrites=true&w=majority";
+const connectionString = process.env.connection_string || "";
 
 app.use(express.json());
 
@@ -63,14 +63,15 @@ app.use((err: CustomError, req: Request, res: Response, next: NextFunction) => {
   console.log(err.statusCode, err.message);
   res.status(statusCode).send(resp);
 });
+async function connectDb(){
+  try {
+      await mongoose.connect(connectionString);
+      app.listen(process.env.PORT,() => {
+          console.log("Server is running");
+      });
+  } catch (error) {
+      console.log(error);
+  }
+}
 
-const connect = mongoose.connect(connectionString|| "mongodb+srv://daya:1234567890@cluster0.zfa20tr.mongodb.net/Quiz?retryWrites=true&w=majority", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-} as mongoose.ConnectOptions);
-
-connect.then(() => {
-  app.listen(process.env.PORT, () => {
-    console.log("Server Connected");
-  });
-});
+connectDb();
