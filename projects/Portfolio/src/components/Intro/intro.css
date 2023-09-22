@@ -62,3 +62,8 @@
     }
     
 }
+@media screen and (max-width:480px){
+    .bg{
+        right: -20vw;
+    }   
+}
