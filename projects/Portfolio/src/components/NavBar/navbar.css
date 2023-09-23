@@ -4,7 +4,7 @@
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 1rem;
+    padding: 0 0rem;
     border-radius: 2rem;
     margin-right: 4rem;
     height: 2rem;
@@ -45,4 +45,29 @@
     color:red;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid red;
+}
+
+@media screen and (max-width:670px) {
+    .navbar{
+        background: rgb(30, 30, 30);
+        height: 5rem;
+        width: 120vw;
+        max-width: 75rem;
+        margin: 0 auto;
+        padding: 1rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        
+    }
+    
+}
+
+.active {
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
 }
