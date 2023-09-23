@@ -9,13 +9,12 @@ const Navbar = () => {
         <nav className="navbar">
             <img src={logo} alt="logo" className='logo'/>
             <div className="desktopMenu">
-            <Link className="desktopMenuListItem">Home</Link>
-            <Link className="desktopMenuListItem">About Me</Link>
-            <Link className="desktopMenuListItem">Portfolio</Link>
-            <Link className="desktopMenuListItem">Client</Link>
+            <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} className="desktopMenuListItem">Home</Link>
+            <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-100} className="desktopMenuListItem">About Me</Link>
+            <Link activeClass='active' to='works' spy={true} smooth={true} offset={-70} className="desktopMenuListItem">Portfolio</Link>
             </div>
-            <button className="desktopMenuBtn">
-                <img src={ContactImg} alt="ContactImg" className="desktopMenuImg" />Contact Me</button>
+            <Link activeClass='active' to='contactPage' spy={true} smooth={true} offset={-100} className="desktopMenuBtn"> 
+            <button className="desktopMenuBtn"> <img src={ContactImg} alt="ContactImg" className="desktopMenuImg" />Contact Me</button></Link>    
         </nav>
     )
 }
