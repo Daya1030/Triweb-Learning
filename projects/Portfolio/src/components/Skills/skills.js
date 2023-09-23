@@ -16,14 +16,15 @@ const Skills=() => {
                 <img src={UIDesign} alt="" className="skillBarImg" />
                 <div className="skillBarText">
                     <h2>UI/UX Design</h2>
-                    <p>This is UI/UX Design section</p>
+                    <p>I also have knowledge of UI/UX design</p>
                 </div>
             </div>
             <div className="skillBar">
                 <img src={WebDesign} alt="" className="skillBarImg" />
                 <div className="skillBarText">
                     <h2>Website Design</h2>
-                    <p>This is Website Design section</p>
+                    <p>I also have knowledge of Website design. i know many programming languages like HTML, CSS, <br></br>
+                    JavaScript, React etc as well as knowledge on mongoDB, Python, MySQL etc</p>
                 </div>
             </div>
             <div className="skillBar">
