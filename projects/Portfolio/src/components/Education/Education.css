@@ -1,0 +1,54 @@
+#education {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.education-item {
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+    max-width: 50rem;
+    text-align: left;
+}
+
+.education-item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.education-item p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 720px) {
+    #education {
+        margin-top: 1rem;
+    }
+
+    .education-item {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .education-item h3 {
+        font-size: 4vw;
+    }
+
+    .education-item p {
+        font-size: 2.5vw;
+    }
+}
