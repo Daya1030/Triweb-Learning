@@ -42,6 +42,17 @@ const Skills=() => {
                        Keyboard: ViewSonic KU580</p>
                 </div>
             </div>
+            <div className="skillBar">
+                <div className="skillBarText">
+                    <h2>Programming languages</h2>
+                    <p>Languages I Know:<br></br>
+                       HTML <br></br>
+                       CSS<br></br>
+                       JavaScript<br></br>
+                       Typescript<br></br>
+                       Python<br></br></p>
+                </div>
+            </div>
         </div>
     </section>
   );
