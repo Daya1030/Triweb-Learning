@@ -47,27 +47,27 @@
     border-bottom: 3px solid red;
 }
 
-@media screen and (max-width:670px) {
+@media screen and (max-width:480px) {
+   
     .navbar{
         background: rgb(30, 30, 30);
-        height: 5rem;
-        width: 120vw;
-        max-width: 75rem;
-        margin: 0 auto;
+        height: 2rem;
+        width: 110vw;
+        max-width: 85rem;
+        margin: 1rem 0;
         padding: 1rem 1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: sticky;
         top: 0;
-        z-index: 3;
-        
+        z-index: 3;  
     }
     
 }
 
 .active {
-    color: yellow;
+    color: red;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid red;
 }
