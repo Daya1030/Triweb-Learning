@@ -28,7 +28,7 @@ function Contact() {
     <section id="contactPage">
       <h1 className="contactPageTitle">Contact Me</h1>
       <span className="contactDesc">Please fill out the form below to discuss any work with me.</span>
-      <form className="contractForm" ref={form} onSubmit={sendEmail}>
+      <form className="contractForm" ref={form} OnSubmit={sendEmail}>
         <input type="text" className="name" placeholder="Your Name" name="your_name" />
         <input type="text" className="email" placeholder="Your Email" name="your_email" />
         <textarea className="msg" name="message" rows="5" placeholder="Your Message"></textarea>
