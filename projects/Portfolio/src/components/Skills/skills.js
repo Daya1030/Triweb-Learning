@@ -23,7 +23,7 @@ const Skills=() => {
                 <img src={WebDesign} alt="" className="skillBarImg" />
                 <div className="skillBarText">
                     <h2>Website Design</h2>
-                    <p>I also have knowledge of Website design. i know many programming languages like HTML, CSS, <br></br>
+                    <p>I also have knowledge of Website design. i know many programming languages like HTML, CSS, <br/> 
                     JavaScript, React etc as well as knowledge on mongoDB, Python, MySQL etc</p>
                 </div>
             </div>
@@ -32,13 +32,13 @@ const Skills=() => {
                 <div className="skillBarText">
                     <h2>PC Gamer</h2>
                     <p>My PC Specs:
-                       Monitor: MSI Curve Gaming Monitor 27inch 165 Hz <br></br>
-                       GPU: RTX 2060 Super 8GB<br></br>
+                       Monitor: MSI Curve Gaming Monitor 27inch 165 Hz <br/> 
+                       GPU: RTX 2060 Super 8GB<br/> 
                        CPU: Ryzen 7 3700x<br></br>
-                       Ram: HyperX RGB 16GB 3600 MHz<br></br>
-                       Cooler: Cooler Master Hyper H410R<br></br>
-                       Motherboard: MSI AMD B450 Pro Max<br></br>
-                       Mouse: MSI GM11<br></br>
+                       Ram: HyperX RGB 16GB 3600 MHz<br/> 
+                       Cooler: Cooler Master Hyper H410R<br/> 
+                       Motherboard: MSI AMD B450 Pro Max<br/> 
+                       Mouse: MSI GM11<br/> 
                        Keyboard: ViewSonic KU580</p>
                 </div>
             </div>
@@ -46,11 +46,11 @@ const Skills=() => {
                 <div className="skillBarText">
                     <h2>Programming languages</h2>
                     <p>Languages I Know:<br></br>
-                       HTML <br></br>
-                       CSS<br></br>
-                       JavaScript<br></br>
-                       Typescript<br></br>
-                       Python<br></br></p>
+                       HTML <br/> 
+                       CSS <br/> 
+                       JavaScript <br/> 
+                       Typescript <br/> 
+                       Python <br/> </p>
                 </div>
             </div>
         </div>
