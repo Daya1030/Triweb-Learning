@@ -10,7 +10,7 @@ function Intro() {
     <section id="intro">
       <div className="introContent">
         <span className="hello">Hello</span>
-        <span className="introText">I'm <span className="introName">DayaRam Thapa</span> <br/>Full Stack Developer on Mernstack</span>
+        <span className="introText">I'm <span className="introName">DayaRam Thapa</span> <br/>Full Stack Developer on MERN stack</span>
         <p className="introPara">
           I'm passionate about building modern and scalable web applications using the MERN (MongoDB, Express, React, Node.js) stack.<br/> 
           With a strong foundation in HTML, CSS, JavaScript, and TypeScript, I create interactive and user-friendly frontends.
