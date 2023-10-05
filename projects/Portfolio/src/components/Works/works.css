@@ -49,35 +49,28 @@
     
 }
 
-/* Text overlay initially hidden */
-.workImg {
-    position: relative;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .workImg::after {
-    content: "View Project";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-    font-weight: bold;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.2s ease-in-out;
-  }
-  
-  /* Text appears on hover */
-  .workImg:hover {
-    transform: scale(1.05);
-    filter: brightness(1.2); /* Optional: Increase brightness on hover */
-  }
-  
-  .workImg:hover::after {
-    opacity: 1; /* Display on hover */
-  }
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.view-button {
+  position: absolute;
+  bottom: 10px; /* Adjust the position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Text appears on hover */
+.image-container:hover .view-button {
+  opacity: 1; /* Display on hover */
+}
   
