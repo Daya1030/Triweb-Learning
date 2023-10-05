@@ -10,45 +10,51 @@
     margin: 0 auto;
     margin-top: 2rem;
     font-size: 2rem;
-}
-
-.education-item {
+  }
+  
+  .education-item {
     margin: 2rem;
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
     background: rgb(50, 50, 50);
-    max-width: 50rem;
     text-align: left;
-}
-
-.education-item h3 {
+    transition: background-color 0.3s, transform 0.3s; /* Transition added here */
+  }
+  
+  .education-item:hover {
+    background: rgb(70, 70, 70);
+    transform: scale(0.95); /* Shrink on hover */
+  }
+  
+  .education-item h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
     font-weight: bold;
-}
-
-.education-item p {
+  }
+  
+  .education-item p {
     font-size: 1rem;
     font-weight: 300;
     margin: 0.5rem 0;
-}
-
-@media screen and (max-width: 720px) {
+  }
+  
+  @media screen and (max-width: 720px) {
     #education {
-        margin-top: 1rem;
+      margin-top: 1rem;
     }
-
+  
     .education-item {
-        margin: 1rem;
-        padding: 1rem;
+      margin: 1rem;
+      padding: 1rem;
     }
-
+  
     .education-item h3 {
-        font-size: 4vw;
+      font-size: 4vw;
     }
-
+  
     .education-item p {
-        font-size: 2.5vw;
+      font-size: 2.5vw;
     }
-}
+  }
+  
