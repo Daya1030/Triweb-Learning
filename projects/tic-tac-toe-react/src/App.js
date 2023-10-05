@@ -25,9 +25,9 @@ function Board({ xIsNext, squares, onPlay }) {
   const winner = calculateWinner(squares);
   let status;
   if (winner) {
-    status = 'Winner: ' + winner;
+    status = 'Congratilation ' + winner + ' For winning the Game'; 
   } else {
-    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+    status = 'Hey player: ' + (xIsNext ? 'X' : 'O') + '-please take your move';
   }
 
   return (
@@ -71,9 +71,9 @@ export default function Game() {
   const moves = history.map((squares, move) => {
     let description;
     if (move > 0) {
-      description = 'Go to move #' + move;
+      description = 'Go to move -' + move;
     } else {
-      description = 'Go to game start';
+      description = 'Restart Game';
     }
     return (
       <li key={move}>
