@@ -3,6 +3,7 @@ import './skills.css';
 import UIDesign from '../../assets/ui-design.png';
 import WebDesign from '../../assets/website-design.png';
 import Youtube from '../../assets/youtube.png';
+import knowledge from '../../assets/knowledge.png';
 
 const Skills=() => {
   return (
@@ -43,14 +44,34 @@ const Skills=() => {
                 </div>
             </div>
             <div className="skillBar">
+                <img src={knowledge} alt="" className="skillBarImg" />
                 <div className="skillBarText">
-                    <h2>Programming languages</h2>
-                    <p>Languages I Know:<br></br>
-                       HTML <br/> 
-                       CSS <br/> 
-                       JavaScript <br/> 
-                       Typescript <br/> 
-                       Python <br/> </p>
+                <h2>Programming languages</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>Python</li>
+                        <li>Node.js</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div className="skillBar">
+                <img src={knowledge} alt="" className="skillBarImg" />
+                <div className="skillBarText">
+                <h2>Knowledge</h2>
+            <ul>
+                <li>MongoDB</li>
+                <li>Node.js</li>
+                <li>MySQL</li>
+                <li>Express</li>
+                <li>React</li>
+                <li>Rest APIs</li>
+                <li>Git</li>
+            </ul>
+
                 </div>
             </div>
         </div>
