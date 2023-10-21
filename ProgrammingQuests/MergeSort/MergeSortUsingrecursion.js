@@ -61,5 +61,5 @@ var arr = [ 13, 10, 12, 4, 5, 6 ];
 
     mergeSort(arr, 0, n-1);
 
-    console.log( "Sorted array for above given array is: ");
+    console.log( "Sorted array for above given array is::");
     console.log(arr);//[ 4, 5, 6, 10, 12, 13 ]
